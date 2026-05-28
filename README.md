@@ -270,4 +270,4 @@ Changed denominator to len(numbers), added zero-division guard in divide(), remo
 
 ## License
 
-MIT
+MIT.

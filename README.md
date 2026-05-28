@@ -40,7 +40,7 @@ Developer opens PR
 │  ───────────────────────────── │
 │  analyze_failure.py             │
 │    └─ extract errors            │
-│    └─ call Gemini API  ─────►  Gemini 1.5 Flash
+│    └─ call Gemini API  ─────►  Gemini 2.5 Flash
 │    └─ save fix JSON    ◄─────  JSON: summary, fix, code
 │                                 │
 │  apply_fix.py                   │

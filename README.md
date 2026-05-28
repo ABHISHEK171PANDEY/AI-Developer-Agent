@@ -10,7 +10,7 @@ When a developer opens a PR against `main`, a GitHub Actions pipeline runs linti
 
 1. Collects the combined `flake8` + `pytest` logs
 2. Reads the failing source file
-3. Sends both to **Gemini 1.5 Flash** with a structured debugging prompt
+3. Sends both to **Gemini 2.5 Flash** with a structured debugging prompt
 4. Gemini returns a JSON payload: issue summary, root cause, fix description, and corrected code
 5. The agent creates a new branch, commits the fix, and opens a PR — automatically
 

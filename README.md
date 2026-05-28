@@ -259,15 +259,6 @@ Changed denominator to len(numbers), added zero-division guard in divide(), remo
 
 ---
 
-## Notes
-
-- The agent targets the **source branch of the failing PR** as the base for its fix PR, keeping history clean
-- Original files are backed up as `.bak` before being overwritten
-- The Gemini prompt is intentionally minimal — concise prompts reduce hallucination risk and API cost
-- `gemini-1.5-flash` is used for low latency and cost; swap to `gemini-1.5-pro` for more complex codebases
-
----
-
 ## License
 
 MIT.

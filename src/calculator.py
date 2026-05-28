@@ -1,26 +1,20 @@
 # calculator.py - Simple calculator with intentional issues for AI fix demo
 
-
 def add(a, b):
     return a + b
-
 
 def subtract(a, b):
     return a - b
 
-
 def multiply(a, b):
     return a * b
 
-
 def divide(a, b):
-    if b == 0:
-        raise ZeroDivisionError("Cannot divide by zero")
+    # BUG: no check for division by zero
     return a / b
 
-
 def calculate_average(numbers):
-    if not numbers:
-        return 0.0  # Handle empty list case gracefully
+    # LINTING ISSUE: unused variable 'total'
     total = sum(numbers)
-    return total / len(numbers)
+    # BUG: off-by-one — should divide by len(numbers), not len(numbers) - 1
+    return sum(numbers) / (len(numbers) - 1)
